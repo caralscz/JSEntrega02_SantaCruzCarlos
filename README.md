@@ -12,7 +12,7 @@ Abril de 2025<br>
 
 
 El proyecto tiene 4 HTML <br>
-El index.html <br>
+El index.html donde el usuario debe identificarse<br>
 la pag hbServicios.html que se ingresa desde el index y permite acceder a las otras dos<br>
 La pag hbCambioDeDivisas.html están implementadas con JS interactuando con HTML<br>
 la pág hbCajaDeAhorroPesos.html  que no está implementada<br>
@@ -38,6 +38,10 @@ Debe hacer click en el botón "Continuar"<br>
 Se verifica que sean correctos<br>
 Si son correctos se accede a la pag de los servicios<br>
 y si son incorrectos da un mensaje de error<br>
+
+
+Nota: En los formularios no pude utilizar metodo POST, por ese motivo
+utilizé método GET que muestra los datos 
 
 
 Desde Servicios podrá ingresar : <br>
