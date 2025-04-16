@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    Estudiando Java Script | CoderHouse entrega02 | Home Banking | 2025
+    Desarrollado por Carlos A. santa Cruz
+    Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h
+    Profesor CoderHouse : Julio Avantt
+    Adjunto o tutor CoderHouse: Alexis Coronel
+     -->
+    <title>Estudiando JS | CoderHouse entrega02 | Home Banking Index</title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="contenedorHeader">
+        <div class="headerDivLogo">
+            <img src="./assets/img/LogoHB.png" class="imgHB" title="La nostra banca" alt="Home banking logo">
+            <h1>La nostra banca</h1>
+        </div>
+        <div class="headerDivIngresar">
+            <p>Home&nbsp;Banking</p>
+            <a href="#">
+                <img src="./assets/img/icons_login.png" class="imgIngresarHB" title="Ingresar"
+                    alt="Ingresar Home banking logo">
+            </a>
+        </div>
+
+    </header>
+
+    <main class="contenedorMain">
+
+        <section class="UsuarioIdentificado" id="idUsuarioIdentificado">
+            <p>Usuario no identificado</p>
+        </section>
+
+        <section>
+            <div id="formularioIdentificacion">
+                <h2>Identificación del usuario</h2>
+                <br><br>
+                <form action="./pages/hbServicios.html" method="post" id="idFormularioIdentificacion">
+                    <label for="idNombreUsuario">Nombre de usuario:</label>
+                    <input type="text" id="idNombreUsuario" name="idNombreUsuario"
+                        placeholder="Ingrese su nombre de usuario" required><br>
+                    <label for="idClave">Clave:</label>
+                    <input type="password" id="idClave" name="idClave" placeholder="Ingrese su clave" required><br>
+                    <label for="idRecuerdame">Recuerdame</label>
+                    <input type="checkbox" id="idRecuerdame" name="idRecuerdame" value="Recuerdame" checked><br><br>
+                    <button type="submit" onclick="ValidarUnUsuario();"
+                        id="id_botonIngresarUnUsuario">&nbsp;&nbsp;Continuar&nbsp;&nbsp;</button>
+                    <p id="idError" class="error">Error: Debe ingresar un nombre de usuario y clave válidos</p><br><br>
+                </form>
+            </div>
+        </section>
+
+        <section class="contenedorAviso" id="idcontenedorAviso">
+            <h2>CoderHouse Java Script <br> Comisión 86620</h2>
+            <p>Carlos A. santa Cruz </p>
+            <p>Profesor: Julio Avantt </p>
+            <p>Adjunto o tutor: Alexis Coronel </p>
+            <p>año 2025 </p>
+            <br>
+            <p>Proyecto de Home banking - <b>Entrega2</b> </p>
+            <br>
+            <p>Se implementan las funciones de estas páginas </p>
+            <p>para cumplir los objetivos de la entrega. </p>
+            <br>
+            <p>Las funciones en Java Script: </p>
+            <p> </p>
+            <p>En todas las paginas se verifica que exista un usuario </p>
+            <p>en la sessionStorage para ver que haya pasado por index.html </p>
+            <p>Si no se verifica, lo redireccionamos a inicio.html para que se identifique</p>
+            <br>
+            <p>En index.html pedirá un nombre de usuario y password válidos </p>
+            <p>Los usuarios posibles son: </p>
+            <p>&nbsp;&nbsp;&nbsp;"u1", "p1" </p>
+            <p>&nbsp;&nbsp;&nbsp;"usuario1", "password1" </p>
+            <p>&nbsp;&nbsp;&nbsp;"usuario2", "password2" </p>
+            <p>&nbsp;&nbsp;&nbsp;"usuario3", "password3" </p>
+            <br>
+            <p>Con Javascript se verifica que sean correctos </p>
+            <p>Si son correctos nos vamos a ver los servicios del Home Banking </p>
+            <p>y si son incorrectos se muestra un mensaje de Error </p>
+            <br>
+            <p>En index.html, al ingresar por primera vez, se carga la tabla de usuarios
+                en una sessionStorage para ser utilizado durante toda la session </p>
+
+
+        </section>
+    </main>
+
+    <footer class="contenedorFooter">
+        <div class="footerDivLogo">
+            <a href="./README.md" target="_readme">
+                <img src="./assets/img/LogoHB.png" class="imgHB" alt="Home banking logo" title="Readme Home banking">
+            </a>
+        </div>
+        <div class="footerDivTexto">
+            <p>Estudiando Java Script | CoderHouse entrega02 | Home Banking | 2025</p>
+            <p>Desarrollado por Carlos A. santa Cruz © Todos los derechos reservados</p>
+            <p>Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h</p>
+            <p>Profesor CoderHouse : Julio Avantt</p>
+            <p>Adjunto o tutor CoderHouse: Alexis Coronel</p>
+        </div>
+    </footer>
+
+    <!-- Mis Java Script -->
+    <script src="./js/Index.js"></script>
+
+</body>
+
+</html>

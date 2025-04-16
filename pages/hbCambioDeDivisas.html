@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    Estudiando Java Script | CoderHouse entrega02 | Home Banking | 2025
+    Desarrollado por Carlos A. santa Cruz
+    Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h
+    Profesor CoderHouse : Julio Avantt
+    Adjunto o tutor CoderHouse: Alexis Coronel
+     -->
+
+    <title>Estudiando JS | CoderHouse entrega02 | Home Banking | Cambio de divisas </title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="contenedorHeader">
+        <div class="headerDivLogo">
+            <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+            <h1>La nostra banca - <span class="Hb_titulo_servicio">Cambio de divisas</span></h1>
+        </div>
+        <div>
+            <a href="../index.html" class="UnBoton">Inicio</a>
+            <a href="./hbServicios.html" class="UnBoton">A servicios</a>
+        </div>
+    </header>
+
+    <main class="contenedorMain">
+
+        <section class="UsuarioIdentificado" id="idUsuarioIdentificado">
+            <p>Usuario no identificado</p>
+        </section>
+
+        <section class="contenedorCambioDivisas">
+            <h2>Cambio de divisas</h2>
+
+            <div class="cambioDivisas">
+                <div class="cambioDivisasUna">
+                    <h3>Dólar</h3>
+                    <p>Compra: $<span id="idCompraDolar">1286.50</span></p>
+                    <p>Venta: $<span id="idVentaDolar">1298.58</span></p>
+                </div>
+                <div class="cambioDivisasUna">
+                    <h3>Euro</h3>
+                    <p>Compra: $<span id="idCompraEuro">1389.13</span></p>
+                    <p>Venta: $<span id="idVentaEuro">1390.26</span></p>
+                </div>
+            </div>
+
+            <div>
+                <form action="#" method="get" id="idFormCambioDivisas">
+                    <br>
+                    <p> <strong>Moneda a operar</strong> </p>
+
+                    <input type="radio" id="fcd_dolar" name="fMonedaElegida" value="dolar">
+                    <label for="fcd_dolar">Dolar</label><br>
+                    <input type="radio" id="fcd_euro" name="fMonedaElegida" value="euro">
+                    <label for="fcd_euro">Euro</label><br>
+
+                    <br>
+                    <p><strong>Operaci&oacute;n a realizar</strong> </p>
+
+                    <input type="radio" id="fcd_comprar" name="fOperacionElegida" value="comprar">
+                    <label for="fcd_comprar">Comprar</label><br>
+                    <input type="radio" id="fcd_vender" name="fOperacionElegida" value="vender">
+                    <label for="fcd_vender">Vender</label><br>
+
+                    <br>
+                    <p><strong>Importe a invertir en la operaci&oacute;n</strong> </p>
+
+                    <label for="fImporteOperacion">Cantidad:&nbsp;&nbsp;</label>
+                    <input type="text" id="fImporteOperacion" name="fImporteOperacion"><br>
+
+                    <br>
+                    <button type="submit" onclick="CalcularCambioDivisas();" id="id_botonCambioDivisa">&nbsp;Realizar
+                        operaci&oacute;n&nbsp;</button>
+                    <br><br>
+                    <p id="idError" class="error">Error: Debe ingresar un importe válido</p><br><br>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="contenedorFooter">
+        <div class="footerDivLogo">
+            <a href="../README.md" target="_readme">
+                <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo" title="Readme Home banking">
+            </a>
+        </div>
+        <div class="footerDivTexto">
+            <p>Estudiando Java Script | CoderHouse entrega02 | Home Banking | 2025</p>
+            <p>Desarrollado por Carlos A. santa Cruz © Todos los derechos reservados</p>
+            <p>Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h</p>
+            <p>Profesor CoderHouse : Julio Avantt</p>
+            <p>Adjunto o tutor CoderHouse: Alexis Coronel</p>
+        </div>
+    </footer>
+
+    <!-- Mis Java Script -->
+    <script src="../js/hbCambioDeDivisas.js"></script>
+
+</body>
+
+</html>
